@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="AL SHAIKH GARMENTS — clothing, cosmetics, baby essentials, bags, perfumes and everyday shopping.">
+  <title>AL SHAIKH GARMENTS | Online Shopping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="announcement">QUALITY FINDS FOR EVERYONE <span>•</span> CASH ON DELIVERY</div>
+
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="#home" aria-label="AL SHAIKH GARMENTS home">
+        <span class="brand-mark">A</span>
+        <span class="brand-copy"><strong>AL SHAIKH</strong><small>GARMENTS</small></span>
+      </a>
+
+      <form class="search-box" id="searchForm">
+        <input id="searchInput" type="search" placeholder="Search products, categories and more..." aria-label="Search products">
+        <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+      </form>
+
+      <div class="header-actions">
+        <button class="header-action" id="ordersButton" type="button" title="My orders">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z"></path><path d="M8 8h8M8 12h8M8 16h5"></path></svg>
+          <span>My Orders</span>
+        </button>
+        <button class="header-action cart-header" id="headerCartButton" type="button" title="Shopping cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.5L22 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+          <span>Cart</span><b class="cart-count" id="cartCount">0</b>
+        </button>
+      </div>
+    </div>
+
+    <div class="container nav-wrap">
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#products" class="nav-link" data-category="Men's Wear">Men's Wear</a>
+        <a href="#products" class="nav-link" data-category="Women's Wear">Women's Wear</a>
+        <a href="#products" class="nav-link" data-category="Kids & Baby">Kids & Baby</a>
+        <a href="#products" class="nav-link" data-category="Cosmetics">Cosmetics</a>
+        <a href="#products" class="nav-link" data-category="Perfumes">Perfumes</a>
+        <a href="#products" class="nav-link" data-category="Bags & School Bags">Bags & School Bags</a>
+        <a href="#products" class="nav-link" data-category="General Store">General Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="container">
+      <section class="hero">
+        <div class="hero-content">
+          <span class="eyebrow">TRENDY · AFFORDABLE · EVERYDAY</span>
+          <h1>Everything You Need,<br><em>All in One Place.</em></h1>
+          <p>Explore clothing, beauty, baby essentials, bags and everyday favourites at AL SHAIKH GARMENTS.</p>
+          <a class="primary-button" href="#products">SHOP COLLECTION <span>→</span></a>
+        </div>
+        <div class="hero-shade"></div>
+      </section>
+
+      <section class="section category-section" id="categories">
+        <div class="section-heading">
+          <div><span class="section-kicker">EXPLORE OUR STORE</span><h2>Shop by Category</h2><p>Find exactly what you are looking for</p></div>
+          <button class="text-button" id="allCategoriesButton" type="button">View all <span>→</span></button>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </section>
+
+      <section class="section product-section" id="products">
+        <div class="section-heading">
+          <div><span class="section-kicker">HANDPICKED FOR YOU</span><h2 id="productHeading">Featured Products</h2><p>Quality picks for your everyday needs</p></div>
+          <button class="text-button" id="viewAllProducts" type="button">View all <span>→</span></button>
+        </div>
+        <div class="filter-row" id="filterRow" aria-label="Product filters"></div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="benefits" aria-label="Store benefits">
+        <article class="benefit"><span class="benefit-icon">✓</span><div><strong>Quality Products</strong><small>Carefully selected items</small></div></article>
+        <article class="benefit"><span class="benefit-icon">▣</span><div><strong>Cash on Delivery</strong><small>Pay when you receive</small></div></article>
+        <article class="benefit"><span class="benefit-icon">↻</span><div><strong>Easy Support</strong><small>Help with your order</small></div></article>
+        <article class="benefit"><span class="benefit-icon">➤</span><div><strong>Delivery Service</strong><small>Delivery details at checkout</small></div></article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">A</span><span class="brand-copy"><strong>AL SHAIKH</strong><small>GARMENTS</small></span></a>
+      <p>Your everyday shopping destination for fashion, beauty, baby essentials and more.</p>
+      <div class="footer-links"><a href="#products">Shop</a><a href="#categories">Categories</a><a href="#contact" id="footerContact">Contact</a></div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> AL SHAIKH GARMENTS. All rights reserved.</div>
+  </footer>
+
+  <nav class="mobile-dock" aria-label="Mobile navigation">
+    <a class="dock-item selected" href="#home"><span class="dock-icon"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"></path></svg></span><span class="dock-label">Home</span></a>
+    <a class="dock-item" href="#categories"><span class="dock-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg></span><span class="dock-label">Categories</span></a>
+    <button class="dock-item" id="dockCartButton" type="button"><span class="dock-icon dock-cart-icon"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.1 11.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.5L22 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><b id="dockCartCount">0</b></span><span class="dock-label">Cart</span></button>
+    <a class="dock-item" href="#contact" id="dockContact"><span class="dock-icon"><svg viewBox="0 0 24 24"><path d="M4 20v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span><span class="dock-label">Contact</span></a>
+  </nav>
+
+  <!-- Product image and details popup -->
+  <div class="modal-backdrop" id="productModal" aria-hidden="true">
+    <section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+      <button class="modal-close" type="button" data-close-product aria-label="Close product details">×</button>
+      <div class="modal-product-image"><img id="modalImage" alt=""></div>
+      <div class="modal-product-content">
+        <span class="modal-category" id="modalCategory"></span>
+        <h2 id="modalProductName"></h2>
+        <div class="modal-price" id="modalPrice"></div>
+        <p class="modal-description" id="modalDescription"></p>
+        <div class="detail-block"><h3>Product information</h3><p id="modalInfo"></p></div>
+        <div class="detail-block"><h3>Available sizes / options</h3><div class="size-options" id="modalOptions"></div></div>
+        <p class="stock-line" id="modalStock"></p>
+        <button class="primary-button modal-add" id="modalAddButton" type="button">ADD TO CART <span>＋</span></button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Cart and customer checkout -->
+  <div class="modal-backdrop" id="cartModal" aria-hidden="true">
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <button class="modal-close" type="button" data-close-cart aria-label="Close cart">×</button>
+      <span class="section-kicker">YOUR SHOPPING BAG</span>
+      <h2 id="checkoutTitle">Your Cart & Order</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-total"><span>Order total</span><strong id="cartTotal">Rs. 0</strong></div>
+      <form id="checkoutForm" class="checkout-form">
+        <h3>Delivery details</h3>
+        <div class="form-grid">
+          <label>Full name *<input name="customerName" required maxlength="80" placeholder="Enter your name"></label>
+          <label>Mobile number *<input name="phone" required inputmode="tel" maxlength="20" placeholder="03XX XXXXXXX"></label>
+          <label class="full-field">Complete address *<textarea name="address" required maxlength="500" placeholder="House, street, area and city"></textarea></label>
+          <label class="full-field">Order note (optional)<input name="note" maxlength="300" placeholder="Colour, size or other request"></label>
+        </div>
+        <button class="primary-button submit-order" type="submit">PLACE ORDER <span>→</span></button>
+        <p class="form-hint" id="orderStatus">Your order will be saved securely to the store database when Firebase is configured.</p>
+      </form>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
